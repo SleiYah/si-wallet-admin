@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI-Wallet - Support Tickets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ƧI-Wallet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="identity-verification.html">User Verification</a></li>
+                <li><a href="user-table.html">Users</a></li>
+                <li><a href="user-tickets.html" class="active">Tickets</a></li>
+                <li><a href="analytics-dashboard.html">Analytics</a></li>
+                <li><a href="system-logs.html">Logs</a></li>
+            </ul>
+        </nav>
+
+        <div class="actions">
+            <button class="login-btn" id="logout-btn">
+                <p>Logout</p>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="table-container">
+            <table class="transactions-table" id="tickets-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Ticket ID</th>
+                        <th>User</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tickets-tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div id="message-container" class="message-container">
+        <span id="message-text"></span>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/user-tickets.js"></script>
+</body>
+</html>
