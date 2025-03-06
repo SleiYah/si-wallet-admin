@@ -15,7 +15,7 @@ function loadTickets() {
     }
     
     axios.get(
-        baseURL+'/admin/v1/get-tickets.php',
+        `${baseURL}/admin/v1/get-tickets.php`,
         {
             headers: {
                 'Authorization': `Bearer ${authToken}`
@@ -99,7 +99,7 @@ function updateTicketStatus(ticketId, newStatus) {
     };
     
     axios.post(
-        baseURL+'/ticket/v1/add-update-ticket.php',
+       `${baseURL}/ticket/v1/add-update-ticket.php`,
         data,
         {
             headers: {
